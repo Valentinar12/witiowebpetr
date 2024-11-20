@@ -1,0 +1,963 @@
+@charset "utf-8" ;
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+    
+  
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+ }
+body{
+        background-color: #f0ead2;
+        
+        font-family: 'open sans', sans-serif;
+        min-height: 100vh;
+        
+ }
+ 
+header{
+    /* "pegado" al borde superior de la ventana */
+    position: sticky;
+    /* distancia 0 del borde */
+    top: 0;
+    /* capa superior arriba de casi todo */
+    z-index: 8000;
+      
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;     
+       
+}
+
+img{
+        max-width: 100%
+ }
+
+#logo{
+    width: 60%;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+h1, h2, h3 {
+    color: #6c584c;
+}
+h1{
+    font-family: "Merriweather", serif;
+    padding: 0.5em;
+    
+}
+p , a , h2, h3 {
+    font-family: "Open Sans", sans-serif;
+    margin: 1em;
+   
+}
+
+figure {
+  width: 60%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+ul#encontrarcuidador_hogar a {
+  margin: auto;
+}
+.imagengrande{
+    width: 40%;
+    
+    margin: 1em;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+ul li{
+    padding: 0.5em;
+}
+ul{
+
+    height: auto;
+}
+ul#encontrarcuidador_hogar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin: 2em;
+    padding: 2em;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("../imagenes/perroenpasto.JPG");
+
+}
+ul#encontrarcuidador_hogar li {
+    background-color: #adc178;
+    padding: .5em;
+    
+}
+ul#encontrarcuidador_hogar  a{
+    color: white;
+}
+    
+p#parrafo {
+  text-align: center;
+}
+p#parrafo1 {
+  text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+    background-color: #adc178;
+}
+.footer li{
+width: 15%;
+}
+
+
+.encontraruncuidador {
+    background-color: #adc178;
+    border-radius: 2em;
+    margin-inline: 1em;
+}  
+.encontraruncuidador h2 {
+  color: white;
+  padding: .3em;
+  font-size: 1.3em;
+}
+.encontrarunhogar {
+  background-color: #adc178;
+  border-radius: 2em;
+  margin-inline: 1em;
+}  
+.encontrarunhogar h2{
+    color: white;
+    padding: .3em;
+  font-size: 1.3em;
+}
+.imagenesmias{
+    width: 75%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+   
+}
+.vision {
+    background-color: #adc178;
+    margin-inline: 1em;
+    border-radius: 1em;
+   
+}
+.vision h2 {
+  color: white;
+  font-size: 1.3em;
+  padding: .3em;
+}
+.mision {
+    background-color: #adc178;
+    margin-inline: 1em;
+    border-radius: 1em;
+    
+}
+.mision h2{
+  color: white;
+  font-size: 1.3em;
+  padding: .3em;
+}
+.comoevaluamosalusuario {
+  display: flex;
+  background-color: #adc178;
+  
+  align-items: start;
+  border-radius: 2em;
+  margin-inline: 1em;
+}
+.comoevaluamosalusuario h3{
+    color: white;
+}
+
+    
+
+figure.item {
+    width: 10%;
+}
+picture.perrosrazas {
+    display: flex;
+    justify-content: center;
+}
+.subrayado h3 {
+
+  display: flex;
+    background-color: #adc178;
+    padding: .1em;
+    align-items: start;
+    border-radius: 2em;
+    
+}
+.subrayado a{
+    color: white;}
+.imagenesblog{
+    width: 50%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagenesblogalimentacion{
+    width: 40%; 
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.contenedora_huella{
+    display: flex;
+    margin-block: 1em;
+    gap: 1em;
+    margin-inline: .5em;
+    text-align: left;
+    
+}
+.contenedora_huella div{
+    width: 25px;
+}
+.contenedora_huella p{
+    width: 80%;
+    margin: 0;
+}
+.icono_item{
+    display: flex;
+    margin-block: 1em;
+}
+    
+.icono_item div{
+    width: 80px;
+    height: auto;
+    margin-inline: 1em;
+
+
+}
+#centrado figure{
+    align-items: center;
+}
+#seccion_index {
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "art1"
+    "art2"
+    "art3";
+}
+#art1  {
+    align-items: center;
+}
+#art2 {
+    align-items: center;
+}
+#art3 {
+    align-items: center;
+}
+h2 { grid-area: titulo; }
+#art1        {grid-area: art1;}
+#art2       { grid-area: art2; }
+#art3      { grid-area: art3; }
+
+.preguntafrecuente h3 {
+  color: white;
+  padding: .3em;
+}
+.preguntafrecuente {
+  background-color: #adc178;
+  border-radius: 2em;
+  margin-inline: 1em;
+}
+/* ----------
+   encabezado
+   ---------- */
+
+  
+  /* caja que "limita" al logo y al menu */
+  header .contenedora {
+    display: flex; /* caja flexible */
+    /* si los elementos "hijos" no caben en una fila,
+       van a la fila siguiente */
+    flex-wrap: wrap;
+    
+    /* elementos "hijos" separados en la horizontal */
+    justify-content: space-between;
+    
+    /* elementos "hijos" centrados en la vertical */
+    align-items: center;
+  }
+  
+  #logo {
+    display: flex; /* caja flexible */
+    align-items: center; /* hijos centrados en la vertical */
+    /* sale del fondo pero no parece */
+    position: relative;
+    /* capa superior, arriba de todo */
+    z-index: 9999;
+  }
+  
+  /* etiqueta img, pero SÓLO el logo */
+  #logo img {
+    width: 150px;
+    margin: -1em .75em -1em 0;
+    height: auto;
+  }
+  
+  /* ----
+     menu
+     ---- */
+  
+  /* botón "hamburguesa" */
+  .menu-btn {
+    background:  #6C584C;
+    border-radius: 50%;
+    box-shadow: -5px 5px 5px hsl(180 100% 4% / 0.2);
+    padding: .75rem;
+    width: 3rem;
+    aspect-ratio: 1;
+    cursor: pointer;
+    transition: all 0.3s ease-out; /* anima el "hover" */
+  
+    /* fijo, no "scrolea", no genera scroll */
+    position: fixed;
+    /* emplazamiento 1 renglón del borde superior */
+    top: 1em;
+    /* emplazamiento 1 renglón del borde derecho */
+    right: 1em;
+    /* en capa superior, casi arriba de todo */
+    z-index: 9000;
+  }
+  
+  /* cada barra de la "hamburguesa" */
+  .menu-btn .btn-linea {
+    width: 25px;
+    height: 3px;
+    margin: 4px 0 4px 0;
+    background: #ffff;
+    transition: all 0.3s ease-out;
+    /* capa superior, pero no parece */
+    position: relative;
+    /* capa superior, casi arriba de todo */
+    z-index: 9000;
+  }
+  
+  /* cada barra, transformacion para formar la "X" */
+  .menuVisible .menu-btn .btn-linea {
+    transform: rotate(180deg);
+  }
+  /* Las tres barras para formar la "X" */
+  .menuVisible .menu-btn .btn-linea:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 6px);
+  }
+  .menuVisible .menu-btn .btn-linea:nth-child(2) {
+    opacity: 0;
+  }
+  .menuVisible .menu-btn .btn-linea:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -6px);
+  }
+  
+  /* menú propiamente dicho */
+  nav.navmenu ul {
+    background-color: #adc178;
+    display: grid;
+    place-items: center;
+    place-content: center;
+  
+    /* sale del fondo, queda fijo */
+    position: fixed;
+    /* emplazamiento,
+    estirado en toda la ventana */
+    inset: 0;
+    /* capa superior, arriba de casi todo */
+    z-index: 8000;
+    /* escondido "a la derecha" */
+    translate: 100%;
+    
+    transition: all .6s ease; /* anima cuando "nav" NO tiene la clase "menuVisible" */
+  }
+  
+  /* el menu cuando "nav" tiene la clase "menuVisible" */
+  .menuVisible ul.menu {
+    background-color: #adc178;
+    transition: all .4s ease; /* anima cuando "nav" tiene la clase "menuVisible" */
+    
+    /* se muestra */
+    translate: 0;
+  }
+  
+  /* cada vínculo del menu */
+  nav.navmenu > ul.menu li a {
+    border-bottom: solid 3px hsl(0 0% 100% / 0.1);
+    color: white;
+    display: block;
+    font-size: 1.5rem;
+    margin-block-end: .5rem;
+    width: min(70vw, 20rem); /* el valor menor entre el 40% del ancho de la ventana del navegador y 240px */
+    text-align: center;
+    
+    padding: .5rem;
+    text-decoration: none;
+  }
+  
+  nav.navmenu > ul.menu  li a:hover {
+    border-bottom: solid 3px hsl(0 0% 100% / 0.5);
+    transition: all .3s;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+#carrusel-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* Para posicionar las flechas */
+}
+
+
+.carrusel {
+    display: flex; /* Usar flexbox para alinear imágenes */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente (en este caso, puede no ser necesario) */
+    position: relative;
+   
+    overflow: hidden;
+}
+
+.imagen {
+ 
+  display: none; /* Ocultamos todas las imágenes inicialmente */
+  width: 50%; /* Mantiene el ancho del contenedor */
+  height: 400px; /* Establece un alto fijo para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen para cubrir el área sin distorsionar */
+  
+}
+
+.imagen.active {
+  display: block; /* Solo mostramos la imagen activa */
+}
+
+.arrow {
+  background: #adc178;
+  border: none;
+  font-size: 30px; /* Tamaño de la flecha */
+  cursor: pointer;
+  position: absolute; /* Cambiado a absolute para posicionar sobre la imagen */
+  top: 45%; /* Centrar verticalmente */
+  transform: translateY(-50%);
+  color: #fff; /* Color de la flecha */
+  z-index: 1; /* Asegura que las flechas estén sobre la imagen */
+}
+
+#prev {
+  left: 10px; /* Posición de la flecha izquierda */
+  border-radius: 4em;
+}
+
+#next {
+  right: 10px;
+  border-radius: 4em;
+}
+
+form#login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #adc178;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  
+}
+form#register-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #adc178;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  padding-top: 6.5em;
+}
+form#register-form {
+  
+  padding-bottom: 6.5em;
+}
+input#register-email {
+  margin-block-end: 2em;
+  height: 2.5em;
+  margin-inline: 1em;
+}
+input#register-password {
+  margin-block-end: 2em;
+  height: 2.5em;
+  margin-inline: 1em;
+}
+
+
+label {
+    padding-block-end: 1em;
+}
+input#login-email {
+    margin-block-end: 2em;
+    height: 2.5em;
+    margin-inline: 1em;
+}
+input#login-password{
+    margin-block-end: 2em;
+    height: 2.5em;
+    margin-inline: 1em;
+}
+button {
+    width: fit-content;
+    margin-inline: auto;
+    padding: .5em;
+    margin-block: 1em;
+}
+.cuidador-section__title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .cuidador-section__subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #666;
+  }
+  
+  .cuidador-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Tarjeta de cuidador */
+  .cuidador-card {
+    
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+  }
+  
+  .cuidador-card__image {
+    width: 120px; /* Tamaño fijo para todas las imágenes */
+    height: 120px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se adapte al círculo */
+    object-position: center; /* Centra la imagen dentro del círculo */
+    margin: 0 auto 10px; /* Centra y da espacio debajo */
+   
+  }
+  
+  .cuidador-card__name {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+  }
+  
+  .cuidador-card__location {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .cuidador-card__rating {
+    font-size: 1.2rem;
+    color: #ffc107;
+  }
+   
+  .perfil__rating {
+    margin: 1em;
+}
+ul.perfil__services {
+    margin: 1em;
+}
+.perfil__image {
+    display: block; /* Convierte la imagen en un elemento de bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    
+    width: 150px; /* Ajusta el tamaño de la imagen (opcional) */
+    height: 150px; /* Mantén el tamaño proporcional */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+  }
+  
+  /* Para las verificaciones */
+.perfil__verifications li::before {
+    content: '✔'; /* Añade el chulo */
+    color: #adc178; /* Color verde */
+    margin-right: 10px; /* Espacio entre el chulo y el texto */
+    font-weight: bold; /* Asegúrate de que se vea bien */
+  }
+  
+  /* Para los servicios */
+  .perfil__services li::before {
+    content: '✔'; /* Añade el chulo */
+    color: #adc178; /* Color naranja */
+    margin-right: 10px; /* Espacio entre el chulo y el texto */
+    font-weight: bold; /* Asegúrate de que se vea bien */
+  }
+  a.perfil__back {
+    margin: 1em;
+    padding: em;
+    color: #6c584c;
+}
+
+  
+@media (min-width: 40em) {
+  main {
+    padding: 1.5em;
+}
+
+   #seccion_index article {
+    flex-direction: row;
+   }
+   p#parrafo1 {
+    position: relative;
+    right: 4.5em;
+    text-align: left;
+}
+   body {
+    background-color: #f0ead2;
+    font-family: 'open sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+form#register-form {
+  padding-bottom: 6.5em;
+  padding-inline: 4em;
+  margin-inline: 10em;
+  margin: 8.5em;
+}
+form#login-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #adc178;
+  margin: 3em;
+  padding: 1em;
+  border-radius: 1em;
+  margin-inline: 10em;
+  height: 40em;
+  padding-inline: 2em;
+  justify-content: center;
+}
+   .vision {
+    background-color: #adc178;
+    border-radius: 1em;
+    margin: 1em;
+   }
+   .mision {
+    background-color: #adc178;
+    border-radius: 1em;
+    margin: 1em;
+   }
+    .footer {
+      gap: 2em;
+      
+    
+   }
+   .footer li{
+    width: 10%;
+    }
+    p#parrafo {
+      text-align: left;
+    }
+    #seccion_blog  {
+      display: grid;
+      grid-template-areas: 
+      
+      "art1 art2"
+      "art3 art4";
+      align-items: end;
+    }
+    #seccion_index {
+        display: flex; /* Utiliza flexbox para alinear artículos */
+        flex-direction: column; /* Coloca los artículos en columna */
+        align-items: center; /* Centra los artículos */
+        padding-left: 20px; /* Ajusta el valor según lo necesites */
+    }
+    
+    
+    article {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      width: 100%;
+      /* max-width: 600px; */
+      justify-content: center;
+  }
+    
+    figure {
+        margin: 0; /* Elimina el margen por defecto */
+        
+    }
+    
+    figure img {
+        width: 130px; /* Ajusta el ancho de las imágenes */
+      
+        object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+        border-radius: 5px; /* Opcional: agrega esquinas redondeadas */
+    }
+    
+    .arrow {
+        background: #adc178;
+        border: none;
+        font-size: 50px; /* Tamaño de la flecha */
+        cursor: pointer;
+        position: absolute; /* Cambiado a absolute para posicionar sobre la imagen */
+        top: 35%; /* Centrar verticalmente */
+        transform: translateY(-50%);
+        color: #fff; /* Color de la flecha */
+        z-index: 1; /* Asegura que las flechas estén sobre la imagen */
+      }
+      
+     /* el menú deja de ser fijo */
+  header nav.navmenu {
+    /* para que esté en capa superior pero que no parezca */
+    position: relative;
+  }
+
+ 
+    
+  /* botón "hamburguesa" oculto */
+  .menu-btn {
+    display: none;
+  }
+
+  /* menu visible */
+  header nav.navmenu ul.menu,
+  header .menuVisible ul.menu {
+    /* caja flexible para menu horizontal*/
+    display: flex;
+    /* separación entre sus elementos */
+    gap: .25em;
+
+    /* para que esté en capa superior pero que no parezca */
+    position: relative;
+
+    /* elimina desplazamiento */
+    translate: 0;
+
+    /* elimina fondo */
+    background-color: unset;
+    flex-wrap: wrap;
+  }
+    
+  /* items de lista  que contienen los vínculos del menu */
+  header nav.navmenu ul.menu li {
+    min-width: 4em; /* que no midan menos de: */
+  }
+
+  /* vínculos del menu principal */
+  header nav.navmenu ul.menu li a {
+    background-color:#adc178;
+    border-radius: .25em ;
+    color: white;
+    font-size: 1rem;
+    width: auto;
+    padding: .25em 1em;
+    text-align: center;
+    display: block; /* para que sean "cajas" */
+    margin-block-end: unset;
+    border-block-end: unset;
+  }
+  
+  /* cuando el cursor se posiciona sobre los vínculos */
+  header nav.navmenu ul.menu li a:hover {
+    background-color: white;
+    color: #adc178;
+    border-block-end: unset;
+  }
+  header .contenedora {
+    display: flex;
+    flex-direction: row;
+    margin: 1em;
+    flex-wrap: nowrap;
+  }
+  ul.menu {
+    font-size: 0px;
+  }
+  .cuidador-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: row;
+    margin: 5em;
+    padding-inline: 5em;
+}
+.perfil__image {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+}
+ 
+  
+      
+      
+      
+
+
+     
+
+    
+
+    @media (min-width: 60em) {
+        #seccion_index {
+          .contenedora {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Botón del menú (hamburguesa) */
+        .menu-btn {
+            display: none; /* Oculto en versión escritorio */
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .menu-btn .btn-linea {
+            width: 100%;
+            height: 3px;
+            background-color: #333;
+        }
+        
+        /* Menú de navegación */
+        .navmenu {
+            display: flex;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            margin: 0 15px;
+        }
+        
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .menu a:hover {
+            color: #007bff;
+        }
+            display: grid;
+            grid-template-areas: 
+            "titulo titulo titulo"
+            "art1 art2 art3";
+          
+        }
+        p#parrafo1 {
+          position: relative;
+          right: 1em;
+          text-align: left;
+      }
+        #seccion_index article {
+            
+            flex-direction: column;
+           }
+           #seccion_blog  {
+            display: grid;
+            grid-template-areas: 
+            
+            "art1 art2  art3 art4";
+           }
+           .arrow {
+            background: #adc178;
+            border: none;
+            font-size: 35px; /* Tamaño de la flecha */
+            cursor: pointer;
+            position: absolute; /* Cambiado a absolute para posicionar sobre la imagen */
+            top: 50%; /* Centrar verticalmente */
+            transform: translateY(-50%);
+            color: #fff; /* Color de la flecha */
+            z-index: 1; /* Asegura que las flechas estén sobre la imagen */
+          }
+          .imagengrande {
+            width: 20%;
+            margin: 1em;
+            margin-bottom: 3em;
+        }
+    
+       
+        .footer{
+            gap: 4em;
+           }
+        .footer li{
+            width: 5%;
+            }
+            
+            
+             
+            
+            form#login-form {
+              display: flex;
+              flex-direction: column;
+              background-color: #adc178;
+              /* margin: 10em; */
+              margin-inline: 20em;
+              /* padding: 1em; */
+              padding-inline: 5em;
+              border-radius: 1em;
+              /* justify-content: center; */
+              align-content: flex-start;
+          }
+          article#art3 p{
+            padding-bottom: 4em;
+          }
+      }
+          
+            
+            
+
+        
+                
+              
+        
